@@ -17,9 +17,9 @@ import LaunchTimeline from "./components/LaunchTimeline";
 import LocalCoverage from "./components/LocalCoverage";
 import FounderStory from "./components/FounderStory";
 import FAQSection from "./components/FAQSection";
-// import ReferralProgram from "./components/ReferralProgram";
-// import FinalCTA from "./components/FinalCTA";
-// import Footer from "./components/Footer";
+import ReferralProgram from "./components/ReferralProgram";
+import FinalCTA from "./components/FinalCTA";
+import Footer from "./components/Footer";
 
 const LandingPage = () => {
   const [activeSection, setActiveSection] = useState("hero");
@@ -159,9 +159,9 @@ const LandingPage = () => {
         <LocalCoverage />
         <FounderStory />
         <FAQSection audience={audience} />
-        {/* <ReferralProgram />
+        <ReferralProgram />
         <FinalCTA audience={audience} />
-        <Footer /> */}
+        <Footer />
       </main>
     </div>
   );
