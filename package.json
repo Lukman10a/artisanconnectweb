@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build",
+    "build": "rm -rf dist && tsc && vite build",
     "serve": "vite preview",
     "type-check": "tsc --noEmit"
   },
