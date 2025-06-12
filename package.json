@@ -30,8 +30,9 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build --sourcemap",
-    "serve": "vite preview"
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "type-check": "tsc --noEmit"
   },
   "eslintConfig": {
     "extends": [
@@ -56,10 +57,15 @@
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/line-clamp": "^0.1.0",
     "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^24.0.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "4.3.4",
+    "@vitejs/plugin-react-swc": "^3.10.2",
     "autoprefixer": "10.4.2",
     "postcss": "8.4.8",
     "tailwindcss": "3.4.6",
+    "typescript": "^5.8.3",
     "vite": "5.0.0",
     "vite-tsconfig-paths": "3.6.0"
   }
